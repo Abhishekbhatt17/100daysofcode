@@ -1,7 +1,7 @@
-package Day39;
+package Day38;
 
 import java.util.Scanner;
-class mergesort {
+public class mergesort {
 	void merge(int arr[], int l, int m, int r)
 	{
 		int n1 = m - l + 1;
@@ -53,23 +53,24 @@ class mergesort {
 	}
 	public static void main(String args[])
 	{
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter array size");
-		int n=sc.nextInt();
-		int a[]=new int[n];
-		System.out.println("Enter elements into array");
-		for(int i=0;i<n;i++)
-		{
-			a[i]=sc.nextInt();
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("Enter array size");
+			int n=sc.nextInt();
+			int arr[]=new int[n];
+			System.out.println("Enter elements into array");
+			for(int i=0;i<n;i++)
+			{
+				arr[i]=sc.nextInt();
+			}
+			System.out.println("Given Array");
+			printArray(arr);
+
+			mergesort ob = new mergesort();
+			ob.sort(arr, 0, arr.length - 1);
+
+			System.out.println("\nSorted array");
+			printArray(arr);
 		}
-		System.out.println("Given Array");
-		printArray(arr);
-
-		mergesort ob = new mergesort();
-		ob.sort(arr, 0, arr.length - 1);
-
-		System.out.println("\nSorted array");
-		printArray(arr);
 	}
 }
 
