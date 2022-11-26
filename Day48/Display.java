@@ -1,13 +1,3 @@
-// Create three classes: Save, Increment, and Display. The save class should save an integer . The increment class should create a thread that starts incrementing the value of integer variable from 10 (10, 11, 12, 13 ...) and saves each value in the save class. The display class should create a thread that will reading the value in the Save class and display it.  
-
-Write a program that creates an instance of the Save class and sets up a Increment and a Display object to operate on it.  
-
-
-
-
-
-
-
 package Day48;
 
 class Save { 
