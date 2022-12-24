@@ -74,11 +74,11 @@ public class DoublydeletionLL2
         }  
     public static void main(String[] args) {  
         DoublydeletionLL2 dList = new DoublydeletionLL2(); 
-        dList.addNode(10);  
-        dList.addNode(20);  
-        dList.addNode(30);
-        dList.addNode(40);
-        dList.addNode(50);
+        dList.addNode(68);  
+        dList.addNode(43);  
+        dList.addNode(200);
+        dList.addNode(90);
+        dList.addNode(76);
         System.out.println("Initial Doubly Linked List: "); 
         dList.print();
         dList.deletenth(2);
